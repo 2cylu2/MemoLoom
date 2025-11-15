@@ -43,12 +43,6 @@ npm run dev
 
 * [x] **Edit Idea Text**
 
-* [ ] **Save Ideas**
-
-* [ ] **Load Ideas**
-
-* [ ] **Delete Ideas**
-
 * [ ] **Expandable / Collapsible Idea Threads**
   Ideas can branch, and users can expand or shrink nodes to focus or zoom out.
 
@@ -84,8 +78,6 @@ npm run dev
 ---
 
 ### 🧭 Advanced Organizational Features 
-
-Great for long-term usability.
 
 * [ ] **Search Across Ideas**
   Keyword and semantic search.

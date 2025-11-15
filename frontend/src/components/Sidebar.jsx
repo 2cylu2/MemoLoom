@@ -29,7 +29,7 @@ export default function Sidebar({ ideas, setIdeas, activeId, setActiveId }) {
           className={`idea-item ${idea.id === activeId ? "active" : ""}`}
           onClick={() => setActiveId(idea.id)}
         >
-          {idea.title}
+          {idea.title || "Untitled"}
 
           <button
             style={{
