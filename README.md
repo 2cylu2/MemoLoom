@@ -7,108 +7,52 @@ Built by **Cynthia Lu** for DandyHacks
 
 ---
 
-## **🏆 Award Track Alignment**
-### **Productivity & Innovation**
+## 🚀 Core Features
 
-Clear versioning, faster iteration, structured ideation.
+* **Version Tracking**
+  Keep multiple versions of an idea and see how it has changed over time.
 
+* **AI-Powered Comparison**
+  Automatically summarize similarities, differences, and potential merges between ideas.
 
-### **Sponsor Awards**
+* **Explore This Idea**
+  AI generates new possibilities to improve ideas.
 
-* Gemini API → AI insights & version comparison
-* Solana → Immutable version stamps
-* DigitalOcean → Hosting & compute
-* Snowflake → History and analytics
-* GoDaddy → Domain potential 
-
-
----
-
-## **🛠 Setup**
-
-```bash
-git clone <repo-url>
-cd MemoLoom
-npm install
-npm run dev
-```
+* **Safe Restore**
+  Restore a previous version to the editor safely.
 
 ---
 
-## **📅 Roadmap**
+## 🛠 Tech Stack
 
-### ✅ Core Features
-
-* [x] **Create Ideas**
-
-* [x] **Edit Idea Text**
-
-* [ ] **Expandable / Collapsible Idea Threads**
-  Ideas can branch, and users can expand or shrink nodes to focus or zoom out.
-
-* [ ] **Manual Version Saving**
-  Users choose when to capture a snapshot (avoids clutter).
+* **Frontend:** React
+* **Backend:** Node.js + Express
+* **AI Integration:** Google Gemini API (`gemini-2.5-flash`)
 
 ---
 
-### 🌙 Unique MemoLoom Features
+## ⚡ Usage
 
-* [ ] **Idea Evolution Timeline**
-  Visual timeline showing how an idea has changed across versions.
-
-* [ ] **“Best Of” Summaries**
-  AI identifies the strongest parts of past versions for quick comparison.
-
-* [ ] **Idea Comparison View**
-  Side-by-side view:
-  **Past Version vs. Current Version** with diff highlighting + AI commentary.
-
-* [ ] **Smart Grouping & Clustering**
-  AI identifies similar ideas and suggests folders/categories.
-
-* [ ] **Archive System for Dormant Ideas**
-  Allows decluttering without deleting.
-
-* [x] **AI “Idea Evolution Coach”**
-  Prompts, questions, and generative nudges to help improve ideas.
-
-* [ ] **Keyword Extraction & Auto-Tagging**
-  Helps track recurring themes across projects.
+1. **Create an idea** – Enter your idea into MemoLoom.
+2. **Add versions** – Update and evolve your idea over time.
+3. **Compare versions** – Select multiple versions to get AI-generated summaries and suggestions.
+4. **Explore new directions** – Let the AI propose alternate approaches, opportunities, risks, and variations.
+5. **Restore versions** – Safely restore previous versions to continue editing.
 
 ---
 
-### 🧭 Advanced Organizational Features 
+## 🎯 Hackathon Highlights
 
-* [ ] **Search Across Ideas**
-  Keyword and semantic search.
-
-* [ ] **Nested Idea Chains**
-  Sub-ideas beneath ideas beneath ideas (recursive structure).
-
-* [ ] **Drag-and-Drop Reordering**
-  Smooth rearrangement within threads.
-
-* [ ] **Cross-Links Between Ideas**
-  Like Notion backlinks, but simpler.
-
-* [ ] **Color-Coding or Mood Tags**
-  Quick visual identifiers.
+* Combines **creative writing tools** with **AI-assisted idea analysis**.
+* Bridges **visualization**, **version control**, and **exploratory AI suggestions**.
 
 ---
 
-### 🌱 Future / Stretch Features
+## 🌟 Future Enhancements
 
-* [ ] **Idea Maps (Graph View)**
-  Visualize idea evolution as a node graph.
+* **Version Merging** merge similar ideas
+* **Visual idea graphs** connecting related versions and concepts
+* **Archive** archive ideas
+* **Collaborative editing** with multiple users in real-time
 
-* [ ] **Real-Time Collaboration**
-  Multiple users editing shared idea spaces.
-
-* [ ] **Export to Markdown / PDF**
-  For sharing and publishing.
-
-* [ ] **Plugin System (Long-Term Vision)**
-  Allow creators to add custom analysis functions.
-
-* [ ] **Mobile App**
-  Flutter or React Native mirror of MemoLoom.
+---

@@ -87,41 +87,52 @@ ${text}
 
     const result = await model.generateContent(prompt);
     res.json({ suggestion: result.response.text() });
-
   } catch (err) {
     res.status(500).json({ error: err.toString() });
   }
 });
 
-// Compare two ideas
+// Compare multiple versions and provide detailed analysis
 app.post("/ai/compare", async (req, res) => {
   try {
-    const { ideaA, ideaB } = req.body;
+    const { currentContent, versionContent } = req.body; // array of versions, e.g. [{id, text}, ...]
 
     const prompt = `
-Compare the following two ideas. Return:
+You are a creative assistant. Analyze the following versions of an idea. For each version, provide:
 
-- Key similarities
-- Key differences
-- Opportunities for merging
-- Potential directions
+- Key similarities across versions
+- Key differences across versions
+- Potential merges or improvements
+- Suggested refinements
 
-Idea A:
-${ideaA}
+Provide example insights like:
+- "Your last 3 edits simplified the idea. Do you want to explore a more complex direction?"
+- "Version 4 was the most creative divergence. Want to expand that branch?"
+- "You expanded the theme."
+- "This version is more grounded."
+- "Characters have more agency here."
 
-Idea B:
-${ideaB}
+Also provide exploratory options under "Explore This Idea":
+- Alternate directions
+- Opportunities
+- Risks
+- Variations
+
+Versions:
+${versionContent}
+${currentContent}
     `;
 
     const result = await model.generateContent(prompt);
     res.json({ analysis: result.response.text() });
 
   } catch (err) {
-    res.json({ error: err.toString() });
+    res.status(500).json({ error: err.toString() });
   }
 });
 
-// Merge two ideas
+/*
+// Optional: Merge two versions
 app.post("/ai/merge", async (req, res) => {
   try {
     const { ideaA, ideaB } = req.body;
@@ -145,6 +156,18 @@ ${ideaB}
   }
 });
 
+// Optional: Restore suggestion endpoint
+// You could trigger this when user clicks a version in the frontend
+app.post("/ai/restore", async (req, res) => {
+  try {
+    const { versionText } = req.body;
+    // In your frontend, this would just return the version to load into the editor
+    res.json({ restored: versionText });
+  } catch (err) {
+    res.status(500).json({ error: err.toString() });
+  }
+});
+*/
 
 // ------------------
 // START SERVER
