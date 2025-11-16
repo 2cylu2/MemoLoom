@@ -69,7 +69,7 @@ npm run dev
 * [ ] **Archive System for Dormant Ideas**
   Allows decluttering without deleting.
 
-* [ ] **AI “Idea Evolution Coach”**
+* [x] **AI “Idea Evolution Coach”**
   Prompts, questions, and generative nudges to help improve ideas.
 
 * [ ] **Keyword Extraction & Auto-Tagging**
