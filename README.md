@@ -26,7 +26,7 @@ Built by **Cynthia Lu** for DandyHacks
 ## 🛠 Tech Stack
 
 * **Frontend:** React
-* **Backend:** Node.js + Express
+* **Backend:** Node.js
 * **AI Integration:** Google Gemini API (`gemini-2.5-flash`)
 
 ---
@@ -50,9 +50,9 @@ Built by **Cynthia Lu** for DandyHacks
 
 ## 🌟 Future Enhancements
 
-* **Version Merging** merge similar ideas
-* **Visual idea graphs** connecting related versions and concepts
-* **Archive** archive ideas
+* **Version Merging** to merge similar ideas
+* **Visual idea graphs** to connect related versions and concepts
+* **Archive** ideas
 * **Collaborative editing** with multiple users in real-time
 
 ---
